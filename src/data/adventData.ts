@@ -37,16 +37,40 @@ const youtubeLinks = [
   "https://youtube.com/shorts/BunVbJUvAUI?feature=share",
 ];
 
+const instagramLinks = [
+  "https://www.instagram.com/reel/DRtjDjMimxR/",
+  "https://www.instagram.com/reel/DRwLPygD70i/",
+  "https://www.instagram.com/reel/DRyv6eZiU-N/",
+  "https://www.instagram.com/reel/DR1UtCBjp-X/",
+  "https://www.instagram.com/reel/DR3_6bqkoS-/",
+  "https://www.instagram.com/reel/DR6ktT9iqu6/",
+  "https://www.instagram.com/reel/DR9Jf-uDlqc/",
+  "https://www.instagram.com/reel/DR_uTG7goxf/",
+  "https://www.instagram.com/reel/DSCTK9kk4AV/",
+  "https://www.instagram.com/reel/DSEuMypj2jC/",
+  "https://www.instagram.com/reel/DSHcru1ggLq/",
+  "https://www.instagram.com/reel/DSKBeqOiQXQ/",
+  "https://www.instagram.com/reel/DSMmRdMDaeI/",
+  "https://www.instagram.com/reel/DSPLEQZjR4Z/",
+  "https://www.instagram.com/reel/DSRv80NCE_t/",
+  "https://www.instagram.com/reel/DSUUp1GDRcy/",
+  "https://www.instagram.com/reel/DSW5cqyEgf9/",
+  "https://www.instagram.com/reel/DSZeP0bk2I0/",
+  "https://www.instagram.com/reel/DScDCuRCvYY/",
+  "https://www.instagram.com/reel/DSe5CqQlU66/",
+];
+
 export const adventDays: AdventDay[] = Array.from({ length: 24 }, (_, i) => {
   const day = i + 1;
   const hasVideo = day <= youtubeLinks.length;
   const youtubeUrl = hasVideo ? youtubeLinks[i] : '';
+  const instagramUrl = hasVideo && day <= instagramLinks.length ? instagramLinks[i] : '';
   
   return {
     day,
     youtubeUrl,
     youtubeId: hasVideo ? extractYoutubeId(youtubeUrl) : '',
-    instagramUrl: hasVideo ? `https://instagram.com/petals_placeholder_day${day}` : '',
+    instagramUrl,
     tiktokUrl: hasVideo ? `https://tiktok.com/@petals_placeholder_day${day}` : '',
     isReleased: hasVideo,
   };

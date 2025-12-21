@@ -39,7 +39,7 @@ const SocialLinks = ({ instagram, tiktok, youtube }: SocialLinksProps) => {
       bgClass: 'hover:bg-cyan-600/20',
       textClass: 'text-cyan-400 hover:text-cyan-300',
     },
-  ];
+  ].filter(link => link.url && link.url.trim() !== ''); // Only show links with valid URLs
 
   return (
     <div className="flex items-center justify-center gap-4">
