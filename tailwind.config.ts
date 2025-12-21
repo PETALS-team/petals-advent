@@ -55,6 +55,7 @@ export default {
         snow: "hsl(var(--snow))",
         frost: "hsl(var(--frost))",
         gold: "hsl(var(--gold))",
+        heading: "hsl(var(--heading-color))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

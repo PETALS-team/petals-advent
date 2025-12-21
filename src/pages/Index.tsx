@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import AdventGrid from '@/components/AdventGrid';
 import Snowfall from '@/components/Snowfall';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Index = () => {
   return (
@@ -14,7 +15,8 @@ const Index = () => {
         />
       </Helmet>
 
-      <div className="min-h-screen relative overflow-hidden">
+      <div className="min-h-screen relative overflow-hidden bg-background">
+        <ThemeToggle />
         <Snowfall />
         
         <div className="relative z-10">

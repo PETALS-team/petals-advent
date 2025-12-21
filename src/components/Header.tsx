@@ -10,7 +10,7 @@ const Header = () => {
           alt="PETALS Logo" 
           className="w-12 h-12 md:w-16 md:h-16 drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]"
         />
-        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
+        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-heading drop-shadow-lg">
           PETALS Advent
         </h1>
       </div>
