@@ -26,10 +26,12 @@ const Index = () => {
           {/* Footer */}
           <footer className="py-8 px-4 text-center border-t border-border/30 mt-8">
             <p className="text-muted-foreground text-sm">
-              © 2024 PETALS Framework. Building healthier teams together.
+              © 2025 PETALS Framework. Building healthier teams together.
             </p>
             <a 
-              href="#" 
+              href="https://petals.team/advent" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block mt-2 text-primary hover:text-primary/80 text-sm transition-colors"
             >
               Register for the PETALS App →

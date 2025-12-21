@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Playfair Display", "serif"],
+        display: ["Lilita One", "cursive"],
         sans: ["Inter", "sans-serif"],
       },
       colors: {
