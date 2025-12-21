@@ -15,9 +15,14 @@ const Header = () => {
         24 days of prompts to grow your team health
       </p>
       
-      <p className="text-muted-foreground text-sm mt-2">
+      <a 
+        href="https://petals.team/advent" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-muted-foreground text-sm mt-2 hover:text-primary transition-colors inline-block"
+      >
         Powered by the PETALS Framework
-      </p>
+      </a>
 
       {/* Decorative frost line */}
       <div className="mt-8 max-w-md mx-auto h-px bg-gradient-to-r from-transparent via-frost/30 to-transparent" />

@@ -53,7 +53,7 @@ const AdventDoor = ({ data, onOpen }: AdventDoorProps) => {
 
       {/* Front of door */}
       <div className="door-front">
-        <span className="door-number">{data.day}</span>
+        <span className="door-number font-display">{data.day}</span>
         
         {/* Decorative elements */}
         <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-gold/30" />
