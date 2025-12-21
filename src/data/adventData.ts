@@ -60,18 +60,43 @@ const instagramLinks = [
   "https://www.instagram.com/reel/DSe5CqQlU66/",
 ];
 
+const tiktokLinks = [
+  "https://vm.tiktok.com/ZNR2U33ap/",
+  "https://vm.tiktok.com/ZNR2ySAdh/",
+  "https://vm.tiktok.com/ZNR2yMdtX/",
+  "https://vm.tiktok.com/ZNR2yJDUh/",
+  "https://vm.tiktok.com/ZNR2yNRw4/",
+  "https://vm.tiktok.com/ZNR2U3fjw/",
+  "https://vm.tiktok.com/ZNR2yk2fS/",
+  "https://vm.tiktok.com/ZNR2yk3pD/",
+  "https://vm.tiktok.com/ZNR2yhKyb/",
+  "https://vm.tiktok.com/ZNR2yYqgF/",
+  "https://vm.tiktok.com/ZNR2yLYqN/",
+  "https://vm.tiktok.com/ZNR2ySHLF/",
+  "https://vm.tiktok.com/ZNR2UoWu4/",
+  "https://vm.tiktok.com/ZNR2y2m5M/",
+  "https://vm.tiktok.com/ZNR2y26W1/",
+  "https://vm.tiktok.com/ZNR2UTpbK/",
+  "https://vm.tiktok.com/ZNR2yjGao/",
+  "https://vm.tiktok.com/ZNR2yNopR/",
+  "https://vm.tiktok.com/ZNR2UEeyE/",
+  "https://vm.tiktok.com/ZNR2y1MnT/",
+  "https://vm.tiktok.com/ZNR2yYFYM/",
+];
+
 export const adventDays: AdventDay[] = Array.from({ length: 24 }, (_, i) => {
   const day = i + 1;
   const hasVideo = day <= youtubeLinks.length;
   const youtubeUrl = hasVideo ? youtubeLinks[i] : '';
   const instagramUrl = hasVideo && day <= instagramLinks.length ? instagramLinks[i] : '';
+  const tiktokUrl = hasVideo && day <= tiktokLinks.length ? tiktokLinks[i] : '';
   
   return {
     day,
     youtubeUrl,
     youtubeId: hasVideo ? extractYoutubeId(youtubeUrl) : '',
     instagramUrl,
-    tiktokUrl: hasVideo ? `https://tiktok.com/@petals_placeholder_day${day}` : '',
+    tiktokUrl,
     isReleased: hasVideo,
   };
 });
