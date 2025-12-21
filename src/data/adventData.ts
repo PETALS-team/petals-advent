@@ -34,6 +34,7 @@ const youtubeLinks = [
   "https://youtube.com/shorts/WSN-L2KYw7Y?feature=share",
   "https://youtube.com/shorts/YnHCHJhOiL0?feature=share",
   "https://youtube.com/shorts/yAklrE8WGkk?feature=share",
+  "https://youtube.com/shorts/BunVbJUvAUI?feature=share",
 ];
 
 export const adventDays: AdventDay[] = Array.from({ length: 24 }, (_, i) => {
