@@ -1,12 +1,16 @@
-import { Flower2 } from 'lucide-react';
+import petalsLogo from '@/assets/petals-logo.png';
 
 const Header = () => {
   return (
     <header className="relative z-10 py-8 md:py-12 px-4 text-center">
-      {/* Logo placeholder */}
+      {/* Logo and heading */}
       <div className="flex items-center justify-center gap-3 mb-4">
-        <Flower2 className="w-10 h-10 md:w-12 md:h-12 text-primary" />
-        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-gradient-gold">
+        <img 
+          src={petalsLogo} 
+          alt="PETALS Logo" 
+          className="w-12 h-12 md:w-16 md:h-16 drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]"
+        />
+        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
           PETALS Advent
         </h1>
       </div>
